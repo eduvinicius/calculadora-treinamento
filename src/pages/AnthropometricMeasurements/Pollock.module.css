@@ -1,0 +1,131 @@
+.form {
+    justify-content: space-between;
+    border: 3px #FFF solid;
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+    max-width: 550px;
+    max-height: 600px;
+    margin: 3em auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+    background-color: #483D8B;
+}
+.main_form_container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.form input[type=number] {
+    padding: .4em;
+    border-radius: 10px;
+    border: 3px solid #191970;
+    font-size: 12px;
+    margin-bottom: .2em;
+    width: 80px;
+    height: 20px;
+    display: block;
+}
+
+input[type=number]:hover {
+    background-color: #C0C0C0;
+}
+
+
+
+.form input[type=submit] {
+    background-color: #DCDCDC;
+    color: #000;
+    padding: 1em 2em;
+    border-radius: 8px;
+    border: 3px solid #228B22;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+input[type=submit]:hover {
+    background-color: #228B22;
+}
+
+.first_container, .second_container {
+    margin: 1em;
+    text-align: left;
+    font-size: 14px;
+}
+
+.first_container input, .second_container input {
+    margin: .5em;
+}
+
+.submit {
+    text-align: center;
+    flex-wrap: nowrap;
+}
+
+.form p {
+    font-weight: bold;
+}
+
+/* MOBILE - SMALL SCREENS */
+
+@media (max-width: 720px) and (min-width: 400px) {
+
+    .form {
+        width: 300px;
+        margin-bottom: 4em;
+    }
+
+    .form input[type=submit] {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 399px) and (min-width: 300px) {
+
+    .form {
+        width: 295px;
+        padding: .5em;
+        margin-bottom: 5em;
+    }
+
+    .form input[type=submit] {
+        font-size: 10px;
+    }
+
+    .resultPollock {
+        font-size: 12px;
+    }
+
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) and (min-height: 1000px) {
+
+    .form {
+        margin-bottom: 5em;
+    }
+}
+
+/*  DESKTOPS */
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+
+    .form {
+        margin-bottom: 5em;
+    }
+
+}
+
+@media (min-width: 1401px) and (max-width: 1900px) {
+
+    .form {
+        margin-bottom: 5em;
+    }
+
+}

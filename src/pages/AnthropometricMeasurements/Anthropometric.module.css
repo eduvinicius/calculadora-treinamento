@@ -1,0 +1,127 @@
+.container h2, h3 {
+    text-align: center;
+    color: #FFF;
+}
+
+.container p, label {
+    color: #FFF;
+    margin: 1em;
+    text-align: center;
+}
+
+.container span {
+    font-weight: bold;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+
+.container img {
+    width: 500px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px #FFF solid;
+    border-radius: 5px;
+    width: 300px;
+    height: 390px;
+    max-width: 300px;
+    max-height: 390px;
+    margin: 3em auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+    background-color: #330E32;
+}
+
+.form input[type=number] {
+    padding: .4em;
+    border-radius: 10px;
+    border: 3px solid #8A2BE2;
+    font-size: 14px;
+    margin-bottom: .2em;
+}
+
+input[type=number]:hover {
+    background-color: #C0C0C0;
+}
+
+.form input[type=submit] {
+    background-color: #DCDCDC;
+    color: #000;
+    padding: 1em 2em;
+    border-radius: 8px;
+    border: 3px solid #228B22;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background-color: #228B22;
+}
+
+.meth_container p {
+    text-align: center;
+}
+
+/* MOBILE - SMALL SCREENS */
+
+@media (max-width: 720px) and (max-height: 870px) {
+
+    .container img {
+        width: 350px;
+    }
+
+}
+
+@media (max-width: 390px) and (max-height: 750px) {
+
+
+    .container {
+        margin-bottom: 3em;
+    }
+
+    .container img {
+        width: 300px;
+    }
+
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) and (max-height: 1100px) and (min-height: 1024px) {
+
+    .container p {
+      line-height: 2.5;
+    }
+  
+    .container img {
+      width: 700px;
+    }
+  
+  }
+  
+  @media (max-width: 900px) and (min-height: 1100px) {
+  
+    .container p {
+      line-height: 2.5;
+    }
+  
+    .container img {
+      width: 750px;
+    }
+  
+}

@@ -1,0 +1,31 @@
+.navBar {
+    display: flex;
+    justify-content: end;
+    background-color: #483D8B;
+    padding: .5em;
+}
+
+.navBar ul {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+    margin: 1em;
+}
+
+.navBar p {
+    margin-right: 32em;
+}
+
+@media (max-width: 720px) {
+
+    .navBar {
+        width: 100%;
+        padding: .2em;
+    }
+
+    .navBar ul {
+        gap: 1em;
+        margin: 1em;
+    }
+}
+

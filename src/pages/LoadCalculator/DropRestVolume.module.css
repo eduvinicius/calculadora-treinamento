@@ -1,0 +1,144 @@
+.formContainer {
+    display: flex;
+}
+
+.form {
+    border: 3px #FFF solid;
+    border-radius: 5px;
+    width: 550px;
+    height: 270px;
+    max-width: 550px;
+    max-height: 600px;
+    margin: 3em auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+    background-color: #483D8B;
+}
+
+.main_container {
+    display: flex;
+}
+
+.container_sets, .kg_container, .reps_container {
+    display: flex;
+}
+
+
+.form input[type=number] {
+    padding: .4em;
+    border-radius: 10px;
+    border: 3px solid #191970;
+    font-size: 12px;
+    margin-bottom: .2em;
+    width: 40px;
+    height: 40px;
+}
+
+input[type=number]:hover {
+    background-color: #C0C0C0;
+}
+
+.form input[type=submit] {
+    background-color: #DCDCDC;
+    color: #000;
+    padding: 1em 2em;
+    border-radius: 8px;
+    border: 3px solid #228B22;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+input[type=submit]:hover {
+    background-color: #228B22;
+}
+
+.subsets {
+    display: flex;
+    gap: 5px;
+}
+
+.reps_subsets {
+    display: flex;
+    gap: 5px;
+}
+
+.result_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.drop_rest_result {
+    margin-bottom: .8em;
+}
+
+.drop_rest_result p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 720px) {
+
+    .formContainer {
+        margin-bottom: 2em;
+    }
+
+    .form {
+        width: 270px;
+        height: 450px;
+    }
+
+    .main_container {
+        margin-top: 1em;
+        flex-wrap: wrap;
+    }
+
+    .main_container input[type=number] {
+
+        width: 35px;
+        height: 35px;
+    }
+
+    .container_sets input {
+        margin-right: .2em;
+    }
+
+    .drop_rest_result {
+        margin-bottom: .8em;
+    }
+    
+    .drop_rest_result p {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) and (min-height: 1000px) {
+
+    .form {
+        margin-bottom: 5em;
+    }
+}
+
+/*  DESKTOPS */
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+
+    .form {
+        margin-bottom: 5em;
+    }
+
+}
+
+@media (min-width: 1401px) and (max-width: 1900px) {
+
+    .form {
+        margin-bottom: 5em;
+    }
+
+}
