@@ -1,5 +1,5 @@
 // Pages
-import Home from '../src/pages/Home/Home';
+import Home from './pages/Home/Home';
 import Vo2Max from '../src/pages/Vo2Max/Vo2Max';
 import LoadCalculator from './pages/LoadCalculator/LoadCalculator';
 import Anthropometric from './pages/AnthropometricMeasurements/Anthropometric';

@@ -22,10 +22,12 @@ const DropSetVolume = () => {
     const volumeWithoutDropRest = sets * reps * kg;
     setResultWithoutDropRest(volumeWithoutDropRest);
 
-    if ( kgSub2 && !kgSub3) {
+    if (kgSub2 && !kgSub3) {
       var kgAverage = (Number(kg) + Number(kgSub1) + Number(kgSub2)) / 3;
     } else if (!kgSub2 && !kgSub3) {
       var kgAverage = (Number(kg) + Number(kgSub1)) / 2;
+    } else {
+      var kgAverage = (Number(kg) + Number(kgSub1) + Number(kgSub2) + Number(kgSub3)) / 4;
     }
     
     const totalReps = Number(reps) + Number(repsSub1) + Number(repsSub2) + Number(repsSub3);
